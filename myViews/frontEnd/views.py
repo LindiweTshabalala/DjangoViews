@@ -2,7 +2,6 @@ from django.http import HttpResponse
 
 
 def home(request):
-    # return HttpResponse("Hello, world. You're at the polls index.")
     return HttpResponse("<h1> Home </h1>")
 
 def about(request):
