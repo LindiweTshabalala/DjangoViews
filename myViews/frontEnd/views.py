@@ -6,3 +6,6 @@ def home(request):
 
 def about(request):
     return HttpResponse("<h1> About </h1>")
+
+def register(request):
+    return HttpResponse("<h1> Register </h1>")
