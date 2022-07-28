@@ -22,7 +22,7 @@ def register_request(request):
 			user = form.save()
 			login(request, user)
 			messages.success(request, "Registration successful." )
-			return redirect("main:homepage")
+			return redirect("admin:homepage")
 		messages.error(request, "Unsuccessful registration. Invalid information.")
 	form = NewUserForm()
 	return render (request=request, template_name="frontEnd/register.html", context={"register_form":form})
